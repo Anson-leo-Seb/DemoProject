@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Employee</title>
+  <style>
+    #top-bar {
+      background-color:#4CAF50;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-family: Arial;
+    }
+    
+    #tab-bar {
+      background-color: #f2f2f2;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .tab {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    .tab a {
+      display: inline-block;
+      color: #333;
+      text-decoration: none;
+      padding: 5px 10px;
+      border: 1px solid #ddd;
+      background-color: #dcedc9;
+      transition: background-color 0.3s ease;
+    }
+    
+    .tab a:hover {
+      background-color: #ddd;
+    }
+    
+    #content1 {
+      width: 400px;
+      margin: 100px auto;
+      margin-top: 30px;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    
+    h1 {
+      text-align: center;
+      color: white;
+    }
+    h2 {
+        text-align: center;
+        color:#333;
+
+    }
+    form {
+      background-color: #fff;
+     
+      font-family: Arial, sans-serif;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      transition: border-color 0.3s ease;
+    }
+    
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    input[type="date"]:focus,
+    input[type="number"]:focus {
+      border-color: #4CAF50;
+    }
+
+    #edit{
+      width: 400px;
+      margin: 100px auto;
+      margin-top: 30px;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body background="spring-floral-border-background-green-with-leaf-watercolor-illustration.jpg">
+    <div id="top-bar">
+        <h1>Employee Database</h1>
+      </div>
+      
+      <div id="tab-bar">
+        <div class="tab">
+          <a href="home.html">Home</a>
+        </div>
+        <div class="tab">
+          <a href="insert.html",>Add Employees</a>
+        </div>
+        <div class="tab">
+          <a href="display.php">My Employees</a>
+        </div>
+        <!-- Add more tabs as needed -->
+      </div>
+      <div id="content1">
+        <h2>Add Employee</h2>
+        
+        <form method="post", action="insert.php">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+          
+          <label for="salary">Salary:</label>
+          <input type="number" id="salary" name="salary" required>
+          
+          <input type="submit" value="Submit" id="submit" name="submit">
+        </form>
+        </div>
+</body>
+</html>

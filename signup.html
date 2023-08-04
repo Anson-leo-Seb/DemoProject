@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee DB</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image:url("aerial-view-business-team.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .container {
+      width: 400px;
+      margin-left: 100px ;
+      margin: 150px;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      text-align: center;
+      color:wheat;
+    }
+    
+    form {
+      margin-top: 30px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color:#aaa;
+    }
+    
+    input[type="text"],
+    input[type="text"],
+    input[type="password"] {
+      width: 95%;
+      padding: 10px;
+      color:#1f1137;
+      border-radius: 3px;
+      margin-bottom: 5px ;
+      border: 1px solid #aaa;
+      outline: none;
+    }
+    
+    input[type="submit"] {
+      width: 100%;
+      background-color: #1f1137;
+      color: #aaa;
+      border: none;
+      margin-top: 15px ;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 3px;
+      transition: background-color 0.3s ease;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #1f11379;
+    }
+    
+    .message {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
+    
+    .message a {
+      color: #777;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sign-Up as an Employer!</h1>
+    <form method="post", action="signup.php">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="username">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="pswd" name="pswd" required>
+      
+      <input type="submit" value="submit" name="submit" >
+    </form>
+  </div>
+</body>
+</html>

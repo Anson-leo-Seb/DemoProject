@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee DB</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image:url("businessman-showing-changes-report.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .container {
+      width: 400px;
+      margin-left: 100px ;
+      margin: 150px;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    
+    form {
+      margin-top: 30px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+      width: 95%;
+      padding: 10px;
+      border-radius: 3px;
+      margin-bottom: 5px ;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+    
+    input[type="submit"] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      margin-top: 15px ;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 3px;
+      transition: background-color 0.3s ease;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    .message {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
+    
+    .message a {
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Employee DB</h1>
+    <form method="post", action="signin.php">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="psw">Password:</label>
+      <input type="password" id="psw" name="psw" required>
+      
+      <input type="submit" value="submit" name="submit" >
+    </form>
+    <div class="message">
+      Don't have an account? <a href="signup.html">Sign up</a>
+    </div>
+  </div>
+</body>
+</html>

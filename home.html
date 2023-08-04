@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Management System</title>
+  <style>
+    /* CSS styles for the top bar and tab bar */
+    #top-bar {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-family: Arial;
+    }
+    
+    #tab-bar {
+      background-color: #f2f2f2;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .tab {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    .tab a {
+      display: inline-block;
+      color: #333;
+      text-decoration: none;
+      padding: 5px 10px;
+      border: 1px solid #ddd;
+      background-color: #dcedc9;
+      transition: background-color 0.3s ease;
+    }
+    
+    .tab a:hover {
+      background-color: #ddd;
+    }
+    
+    /* CSS styles for the content area */
+    #content {
+      margin-top: 20px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-image: url('13791194_abstract_528.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .height {
+      height: 100vh;
+      width: 100vw;
+    }
+  </style>
+</head>
+<body>
+  <div id="top-bar">
+    <h1>Employee Database</h1>
+  </div>
+  
+  <div id="tab-bar">
+    <div class="tab">
+      <a href="home.html">Home</a>
+    </div>
+    <div class="tab">
+      <a href="insert.html">Add Employees</a>
+    </div>
+    <div class="tab">
+      <a href="display.php">My Employees</a>
+    </div>
+    <!-- Add more tabs as needed -->
+  </div>
+  
+  <div id="content" class="height">
+    <!-- Content for the home page -->
+    <h2>Welcome to the Employee Management System!</h2>
+    <p>This system allows you to manage employee information, departments, and salaries.</p>
+  </div>
+</body>
+</html>
